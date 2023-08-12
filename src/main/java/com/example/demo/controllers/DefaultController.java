@@ -17,7 +17,7 @@ public class DefaultController {
 
     @GetMapping("/")
     public String getDefault() {
-        return "Hello";
+        return "Greetings!";
     }
 
     @GetMapping("/{bookId}")
