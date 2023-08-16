@@ -1,14 +1,16 @@
 package com.example.demo.controllers;
 
+import com.example.demo.services.BookService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.services.BookService;
-
-import java.util.HashMap;
 
 @RestController
 public class DefaultController {
+    @Value("${demo.greeting:Hello}")
+    private String greeting;
+
     private final BookService bookService;
 
     public DefaultController(BookService bookService) {
@@ -17,7 +19,7 @@ public class DefaultController {
 
     @GetMapping("/")
     public String getDefault() {
-        return "Greetings!";
+        return greeting;
     }
 
     @GetMapping("/{bookId}")
