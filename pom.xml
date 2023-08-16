@@ -100,13 +100,13 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-                    <publish>true</publish>
-					<image>
-						<name>ghcr.io/keonhoecha/demo-4-book:0.0.1</name>
-						<env>
-							<BP_JVM_VERSION>17.*</BP_JVM_VERSION>
-						</env>
-					</image>
+<!--                    <publish>true</publish>-->
+<!--					<image>-->
+<!--						<name>ghcr.io/keonhoecha/demo-4-book:0.0.1</name>-->
+<!--						<env>-->
+<!--							<BP_JVM_VERSION>17.*</BP_JVM_VERSION>-->
+<!--						</env>-->
+<!--					</image>-->
 <!--					<docker>-->
 <!--						<publishRegistry>-->
 <!--							<username>{env.REGISTRY_USERNAME}</username>-->
